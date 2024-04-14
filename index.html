@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="author" content="Avinash Gupta">
+
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <h2>Tic Tac Toe Game</h2>
+        </header>
+        <main>
+          <section class="scoreBoard">
+            <div class="playerScore">
+              <label>Player</label>
+              <h3 id="playerScore">0</h3>
+            </div>
+          </section>
+          <section class="gameWindow">
+              <div class="gameFields">
+                <div class="cells">
+                  <div class="cell" data-cell-index="0">
+                    <h2 id="0"></h2>
+                  </div>
+                  <div class="cell" data-cell-index="1">
+                    <h2 id="1"></h2>
+                  </div>
+                  <div class="cell" data-cell-index="2">
+                    <h2 id="2"></h2>
+                  </div>
+                </div>
+                <div class="cells">
+                  <div class="cell" data-cell-index="3">
+                    <h2 id="3"></h2>
+                  </div>
+                  <div class="cell" data-cell-index="4">
+                    <h2 id="4"></h2>
+                  </div>
+                  <div class="cell" data-cell-index="5">
+                    <h2 id="5"></h2>
+                  </div>
+                </div>
+                <div class="cells">
+                  <div class="cell" data-cell-index="6">
+                    <h2 id="6"></h2>
+                  </div>
+                  <div class="cell" data-cell-index="7">
+                    <h2 id="7"></h2>
+                  </div>
+                  <div class="cell" data-cell-index="8">
+                    <h2 id="8"></h2>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="gameControls">
+            <button type="button" class="restart">Restart</button>
+          </section>
+        </main>
+    </div>
+  </body>
+</html>

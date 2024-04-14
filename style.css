@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #003341;
+}
+.container{
+    border-radius: 10px;
+    padding: 3%;
+    height: 90%;
+    width: 70%;
+}
+header h2{
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+}
+.scoreBoard{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.2rem;
+    margin-top: 2%;
+}
+.scoreBoard div:nth-child(1){
+    background-color: #78ACFD;
+    color:black;
+}
+.scoreBoard div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap: 5%;
+    padding: 3% 2%;
+    aspect-ratio: 2/1;
+    height: 2rem;
+    border-radius: 10px;
+}
+.scoreBoard div label{
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+
+}
+.scoreBoard div h3{
+    padding: 2%;
+    border-radius: 15px;
+    aspect-ratio: 1/1;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.gameFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+}
+.gameFields .cells{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.cells .cell{
+    aspect-ratio: 1/1;
+    height: 6rem;
+    border-radius: 10px;
+    background-color: #002630;
+    margin: 2%;
+    transition: 0.1s all ease-in-out;
+    font-size: 3.5rem;
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    box-sizing: border-box;
+}
+.cells .cell h2{
+    position: absolute;
+    font-size: 3.7rem;
+    font-weight: 800;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cells .cell:hover{
+    background-color: #004356;
+    border: 2px solid #64e8ff;
+}
+
+.gameControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+.gameControls *{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    box-shadow: 0 0 20px rgb(67, 67, 67);
+    outline: none;
+    background-color: #005EA6;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0 2%;
+    box-sizing: content-box;
+    font-weight:  800;
+    letter-spacing: 1px;
+
+}
+.gameControls *:nth-child(1){
+    background-color: #69B473;
+    color: black;
+}
+#status{
+    text-align: center;
+    color:white;
+}
