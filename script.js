@@ -62,7 +62,7 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
         }
     if (roundWon) {
         window.alert(winningMessage());
-        playerScore.innerHTML = parseInt(playerScore.innerHTML+1);
+        playerScore.innerHTML = parseInt(playerScore.innerHTML)+1;
         gameActive = false;
         return;
     }
