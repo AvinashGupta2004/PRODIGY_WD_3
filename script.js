@@ -1,5 +1,5 @@
 const statusDisplay = document.querySelector('#status');
-
+let playerScore = document.querySelector(".playerScore");
 let gameActive = true;
 
 let currentPlayer = "X";
@@ -62,6 +62,7 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
         }
     if (roundWon) {
         window.alert(winningMessage());
+        playerScore.innerHTML = parseInt(playerScore.innerHTML+1);
         gameActive = false;
         return;
     }
